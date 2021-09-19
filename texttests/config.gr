@@ -1,8 +1,8 @@
 full_name:Gilded Rose Refactoring Kata
 
 # set your preferred editor and diff tool.
-view_program:subl
-diff_program:meld
+# view_program:notepad2.exe
+# diff_program:meld
 
 # Settings for the Python version
 #executable:${TEXTTEST_HOME}/python/texttest_fixture.py
@@ -28,7 +28,7 @@ diff_program:meld
 #interpreter:perl
 
 # Settings for the TypeScript version
-#executable:${TEXTTEST_HOME}/TypeScript/test/golden-master-text-test.js
-#interpreter:node
+executable:${TEXTTEST_HOME}\TypeScript\test\golden-master-text-test.js
+interpreter:node
 
 filename_convention_scheme:standard
