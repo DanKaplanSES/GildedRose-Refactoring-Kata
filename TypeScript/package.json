@@ -4,7 +4,7 @@
   "description": "Gilded Rose kata in TypeScript",
   "scripts": {
     "precompile": "rimraf app/**/*.js test/**/*.js",
-    "compile": "tsc",
+    "compile": "eslint '**/*ts' --fix && tsc",
     "pretest": "rimraf app/**/*.js test/**/*.js",
     "test": "npm run compile && nyc mocha"
   },
@@ -14,13 +14,16 @@
     "@types/chai": "~3.5.2",
     "@types/mocha": "~2.2.41",
     "@types/node": "~7.0.18",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
     "chai": "~4.2.0",
+    "eslint": "^7.32.0",
     "mocha": "~8.2.1",
     "nyc": "~15.1.0",
     "rimraf": "~3.0.2",
     "source-map-support": "0.5.19",
     "ts-node": "~9.1.1",
-    "typescript": "~4.1.3"
+    "typescript": "^4.4.3"
   },
   "nyc": {
     "extension": [
